@@ -10,7 +10,7 @@ class NexusAuditPro:
             'main_dashboard.py',
             'nexus_security_audit.py',
             'requirements.txt',
-            # Solo archivos que YA existen o son prioritarios
+            # Solo archivos 
             'config/regex_rules.py' if os.path.exists('config/regex_rules.py') else None,
         ]
         self.critical_files = [f for f in self.critical_files if f]  # Limpia None
@@ -30,7 +30,7 @@ class NexusAuditPro:
 
     def check_dangerous_logic(self, file_path):
         if "nexus_security_audit.py" in file_path:
-            return []  # 🔥 Saltamos auto-auditoría para evitar falsos positivos
+            return []  #  Saltamos auto-auditoría para evitar falsos positivos
 
         dangerous_patterns = [
             r'eval\s*\(', r'exec\s*\(', r'os\.system', r'pickle\.loads',
