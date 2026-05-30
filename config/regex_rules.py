@@ -1,11 +1,12 @@
 # config/regex_rules.py
 DLP_RULES = {
     "EMAIL": r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+',
-    # Captura la clave AWS completa (20 caracteres) buscando el prefijo AKIA/ASIA
-    "API_KEY_AWS": r'\b(?:AKIA|ASIA)[0-9A-Z]{16}\b', 
-    # Captura secretos complejos incluyendo símbolos y comillas
-    "SECRET_GENERIC": r'(?i)(?:password|passwd|clave|secret|key|token)[\s:=]+["\']?([A-Za-z0-9/_!@#$%^&*()-]{8,64})["\']?',
-    "IP_ADDRESS": r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b',
-    "CREDIT_CARD": r'\b(?:\d[ -]*?){13,16}\b',
-    "DNI_NIE_ES": r'[0-9]{8}[A-Z]|[XYZ][0-9]{7}[A-Z]'
+    "API_KEY_AWS": r'\b(?:AKIA|ASIA|ABIA|ACCA)[0-9A-Z]{16}\b',           # ampliado prefijos
+    "SECRET_GENERIC": r'(?i)(?:password|passwd|clave|secret|key|token|api_key|auth|bearer)[\s\w_=-]*[\s:=]+["\']?([A-Za-z0-9/_!@#$%^&*()\-+=]{8,128})["\']?',
+    "IP_ADDRESS": r'\b(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\b',  # valida rangos
+    "CREDIT_CARD": r'\b(?:4\d{12}(?:\d{3})?|5[1-5]\d{14}|3[47]\d{13}|6(?:011|5\d{2})\d{12}|(?:2131|1800|35\d{3})\d{11})\b',  # patrones reales (Luhn opcional)
+    "DNI_NIE_ES": r'\b(?:[0-9]{8}[A-Z]|[XYZ][0-9]{7}[A-Z])\b',
+    # (alta prioridad)
+    "JWT_TOKEN": r'eyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+',
+    "SSH_PRIVATE": r'-----BEGIN (?:RSA|OPENSSH|EC) PRIVATE KEY-----',
 }
