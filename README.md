@@ -14,6 +14,8 @@
 
 ## 📦 Instalación Rápida (Linux/macOS/Windows)
 
+⚠️ Uso solo autorizado: Este repositorio es para entornos de prueba y auditorías éticas con permiso explícito. Cumple con las normas de uso responsable.
+
 ```bash
 git clone https://github.com/forkaizen2023-sys/nexus-digital-c2.git
 cd nexus-digital-c2
