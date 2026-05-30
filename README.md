@@ -10,13 +10,13 @@
 - **🛡️ Integrity Audit:** Suite de pruebas estáticas (SAST) integradas para garantizar que el código sea seguro antes de cada despliegue.
 
 ## 🛠️ Tecnologías
-- **Python 3.1x** (Lógica de núcleo y Regex avanzado)
+- **Python 3.10+ o 3.12** (Lógica de núcleo y Regex avanzado)
 - **Streamlit** (Dashboard de mando)
 - **FPDF** (Motores de reportabilidad)
 - **PowerShell Integration** (Logs de auditoría en sistemas Windows)
 
 ## 📦 Instalación Rápida
-1. Clonar: `git clone https://github.com/tu-usuario/nexus_digital_c2.git`
+1. Clonar: `git clone https://github.com/forkaizen2023-sys/nexus-digital-c2.git`
 2. Instalar dependencias: `pip install -r requirements.txt`
 3. Auditar: `python nexus_security_audit.py`
 4. Lanzar: `streamlit run main_dashboard.py`
