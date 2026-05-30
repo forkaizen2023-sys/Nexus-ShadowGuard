@@ -1,0 +1,25 @@
+# 🛡️ ARCHIVOS Y CARPETAS IGNORADAS POR GIT
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Variables de entorno (¡CRÍTICO!)
+.env
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de Streamlit y configuraciones locales
+.streamlit/secrets.toml
+
+# Archivos de sistema operativo (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Reportes generados (para no subir PDFs de clientes)
+*.pdf
