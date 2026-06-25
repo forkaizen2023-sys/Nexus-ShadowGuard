@@ -1,6 +1,6 @@
 # 🛡️ Nexus ShadowGuard - Shadow AI Proxy & Security Suite
 
-**Nexus Digital C2** es una solución de ciberseguridad híbrida diseñada para resolver el desafío de la **"Shadow AI"**. Actúa como middleware inteligente que permite usar LLMs sin comprometer datos sensibles.
+**Nexus ShadowGuard** es una solución de ciberseguridad híbrida diseñada para resolver el desafío de la **"Shadow AI"**. Actúa como middleware inteligente que permite usar LLMs sin comprometer datos sensibles.
 
 ## 🚀 Características Principales
 - 🧠 Shadow AI Guard (DLP + tokenización reversible)
