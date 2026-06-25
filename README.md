@@ -1,4 +1,4 @@
-# 🛡️ Nexus Digital C2 - Shadow AI Proxy & Security Suite
+# 🛡️ Nexus ShadowGuard - Shadow AI Proxy & Security Suite
 
 **Nexus Digital C2** es una solución de ciberseguridad híbrida diseñada para resolver el desafío de la **"Shadow AI"**. Actúa como middleware inteligente que permite usar LLMs sin comprometer datos sensibles.
 
@@ -17,7 +17,7 @@
 ⚠️ Uso solo autorizado: Este repositorio es para entornos de prueba y auditorías éticas con permiso explícito. Cumple con las normas de uso responsable.
 
 ```bash
-git clone https://github.com/forkaizen2023-sys/nexus-digital-c2.git
+git clone https://github.com/forkaizen2023-sys/Nexus ShadowGuard.git
 cd nexus-digital-c2
 python -m venv venv
 source venv/bin/activate    # Windows: venv\Scripts\activate
